@@ -1,0 +1,80 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('/images/earth.jpg');
+    background-size: contain;
+    /* background-repeat: no-repeat; Prevent the image from repeating */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    height: 100vh; /* Ensure the body takes the full height of the viewport */
+}
+
+
+#body {
+    font-size: 20px;
+    background-size: cover;
+    height: 100%; 
+    flex: 1; /* This will take up the remaining space (90%) */
+    display: flex; /* Optional: if you want to control inner layout */
+    flex-direction: column; /* Stack inner elements vertically */
+}
+
+
+#content {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+#headers {
+    color: violet;
+}
+
+select {
+    padding: 5px;
+    font-size: 15px;
+    margin-bottom: 20px; /* Space below the select */
+} 
+
+
+#container {
+    display: flex;
+    gap: 20px;
+    margin: 30px;
+    margin-left: 100px;
+    width: 250px;
+}
+
+.temp {
+    color: white;
+    background-color: darkblue;
+    text-align: center;
+    padding-top: 2px;
+    padding: 5px;
+}
+
+.nameContainer {
+    color: white;
+    background-color:darkslategrey;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.timer {
+    border-color: white;
+}
+
+#footer {
+    color: white;
+    text-align: center;
+    height: 10%;
+    
+    /* filter: brightness(0.5);*/
+}
