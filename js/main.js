@@ -54,7 +54,7 @@ fetch('/city_coordinates.csv')  // get the csv file.
 
 
 function fetch7Timer(selectedCity, text, selectedCityLatitude, selectedCityLongitude) {
-    fetch('http://www.7timer.info/bin/api.pl?lon=selectedCityLongitude&lat=selectedCityLatitude&product=civillight&output=json')  // call the api based on the latitiude and longitude.
+    fetch('https://www.7timer.info/bin/api.pl?lon=selectedCityLongitude&lat=selectedCityLatitude&product=civillight&output=json')  // call the api based on the latitiude and longitude.
     .then(response => response.json())
     .then(data => {
         data.dataseries.forEach(elt => {
